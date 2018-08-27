@@ -3,6 +3,7 @@ body{
 	font-family: "Open Sans";
 	overflow: hidden;
 	display: none;
+	background-size: 100% 100%;
 }
 
 a{
