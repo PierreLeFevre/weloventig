@@ -1,0 +1,354 @@
+body{
+	background: url(../img/trianglify.svg);
+	font-family: "Open Sans";
+	overflow: hidden;
+	display: none;
+}
+
+a{
+	color: inherit;
+	text-decoration: none;
+}
+
+.mainLogo{
+	position: absolute;
+	top: 2.5%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 50vw;
+	user-select: none;
+	animation: loadTop 0.2s ease-out;
+}
+
+
+/*MAIN TAB SYSTEM*/
+
+.boxContainer{
+	width: 70vw;
+	height: 82.5vh;
+	overflow: hidden;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: rgba(255,255,255,0.35);
+	animation: loadBottom 0.2s ease-out;
+}
+
+
+.megaBox{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	height: 50vh;
+	width: 50vh;
+	margin: 0;
+	overflow: hidden;
+	box-sizing: border-box;
+	transition: all 0.2s ease-in-out; 
+	border-radius: 1vh;
+	border-bottom: solid 0.5vh rgba(68,68,68,0.75);
+}
+
+.neutral{
+	cursor: pointer;
+	padding-top: 10%;
+}
+
+.tab_students{
+	left: 5vw;
+	background: rgba(70,0,130, 0.65);
+}
+
+.tab_staff{
+	left: 35vw;
+	background: rgba(221,8,144, 0.65);
+}
+
+.stowed{
+	z-index: 100;
+	border-radius: 0 0 1vh 1vh;
+	top: 2.5vh;
+	left: 60vw;
+	height: 7.5vh;
+	width: 15vh;
+	cursor: pointer;
+	background: rgba(255,255,255,0.5);
+}
+
+.stowed:hover{
+	background: rgba(255,255,255,0.75);
+	top: 3.5vh;
+}
+
+.maximized{
+	width: 100%;
+	height: 100%;
+	left: 0;
+	border-radius: 0;
+	cursor: default;
+}
+
+.boxHeader{
+	text-align: center;
+	user-select: none;
+	font-size: 1.5vw;
+	color: rgba(29, 29, 27, 1);
+	transition: all 0.2s ease-in-out; 
+}
+
+.bigBoxHeaderText{
+	color: rgba(29, 29, 27, 1);
+	font-size: 4vw;
+}
+
+.links{
+	display: none;
+	position: absolute;
+	bottom: 20%;
+	left: 0;
+	height: 50%;
+	width: 100%;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.box{
+	border-radius: 1vh;
+	background: rgba(255,255,255,0.5);
+	box-sizing: border-box;
+	padding: 1vh 1vw;
+	margin: 0 1vh 1vh 1vh;
+	font-size: 2vw;
+	transition: all 0.1s ease-in-out;
+	border-bottom: solid 0.5vh rgba(68,68,68,0.75);
+}
+
+.box:hover{
+	background: rgba(255,255,255,0.75);
+	transform: scale(1.05);
+}
+
+.box:active{
+	transform: scale(1.05) translateY(2px);
+}
+
+.showLinks{
+	display: flex;
+}
+
+
+/*NEWS TAB*/
+
+.newsTab{
+	height: 82.5vh;
+	width: 30vw;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background: rgba(255,255,255,0.5);
+	animation: loadBottom 0.2s ease-out;
+}
+
+.newsHeader{
+	text-align: center;
+	user-select: none;
+}
+
+.newsContainer{
+	height: 87.5%;
+	position: absolute;
+	right: 5%;
+	width: 90%;
+	bottom: 1vh;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.newsPost{
+	border-radius: 1vh;
+	background: rgba(255,255,255,0.5);
+	padding: 1vh 1vw;
+	margin: 0 1vh 1vh 1vh;
+	border-bottom: solid 0.5vh rgba(68,68,68,0.75);
+}
+
+.newsPost h3{
+	color: rgba(29, 29, 27, 1);
+}
+
+.newsPost p{
+	color: rgba(29, 29, 27, 0.85);
+}
+
+/* FOOTER COOKIE POLICY */
+
+footer{
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	background: rgba(255,255,255,0.5);
+	padding: 1vh 1vw;
+	border-radius: 1vh 1vh 0 0;
+	animation: loadBottom 0.2s ease-out;
+	border-bottom: solid 0.5vh rgba(68,68,68,0.75);
+}
+
+footer a{
+	color: blue;
+	text-decoration: underline;
+}
+
+.cookieClose{
+	user-select: none;
+	cursor: pointer;
+}
+
+@media (orientation: portrait){
+
+	body{
+		height: 150vh;
+		overflow: scroll;
+		background-size: auto 100%;
+	}
+
+	.mainLogo{
+		width: 65vw;
+	}
+
+	.boxContainer{
+		width: 100vw;
+		height: 65vh;
+		top: 10vh;
+	}
+
+	.bigBoxHeaderText{
+		font-size: 6vw;		
+	}
+
+	.box{
+		font-size: 5vw;
+		padding: 1vh 2vw;
+	}
+
+	.megaBox{
+		height: 45vw;
+		width: 45vw;
+		transition: all 0s ease-in-out; 
+	}
+
+	.tab_students{
+		left: 3.5vw;
+	}
+
+	.tab_staff{
+		left: auto;
+		right: 3.5vw;
+	}
+
+	.stowed{
+		border-radius: 0 0 1vh 1vh;
+		top: 3.5vh;
+		left: auto;
+		right: 5vw;
+		height: 7.5vh;
+		width: 15vh;
+	}
+
+	.boxHeader{
+		font-size: 5vw;
+	}
+
+	.maximized{
+		width: 100%;
+		height: 100%;
+		left: 0;
+		border-radius: 0;
+		cursor: default;
+	}
+
+	.newsTab{
+		height: 75vh;
+		top: 75vh;
+		width: 100vw;
+		bottom: auto;
+	}
+
+	.newsHeader{
+		font-size: 5.5vw;
+	}
+
+	.newsPost{
+		padding: 0.5vh 2vw;
+	}
+
+	footer{
+		background: rgba(255,255,255,1);
+		padding: 1vh 1vw;
+		font-size: 3.5vw;
+		width: 80vw;
+	}
+
+}
+
+
+/*LOADING ANIMATION KEYFRAMES*/
+
+@keyframes loadBottom{
+	from{opacity: 0.75; bottom: -10vw;}
+	to{opacity: 1; bottom: 0;}
+}
+
+@keyframes loadTop{
+	from{opacity: 0.75; top: -10vw;}
+	to{opacity: 1; top: 2.5%;}
+}
+
+
+/*SCROLL BAR*/
+/* width */
+::-webkit-scrollbar {
+    width: 1vh;
+	border-radius: 1vh;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: rgba(29,29,27,0.5);
+	border-radius: 1vh;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: rgba(255,255,255,0.75);
+	border-radius: 1vh;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: rgba(255,255,255,1);
+	border-radius: 1vh;
+}
+
+/* TEXT SELECTION*/
+
+::selection {
+  background: rgba(29, 29, 27, 0.5);; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: rgba(29, 29, 27, 0.5);; /* Gecko Browsers */
+}
+
+/*
+
+color codes
+
+#dd0890
+#460082
+#0de1ec
+#200c9c
+#f0f0f0
+#222222
+
+*/
