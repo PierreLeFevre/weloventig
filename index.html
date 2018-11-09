@@ -10,91 +10,125 @@
 <head>
 	<title>We Love NTIG</title>
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	<meta 
 		charset="utf-8"
 	>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="./js/index.js">Please use a browser that supports javascript.</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+	<script src="./js/ParallaxFooter.js"></script>
+	<script src="./js/index.js">Var snäll använd en webbläsare som stödjer javascript.</script>
 	<link rel="icon" 
       type="image/png" 
       href="./img/favicon.png">
 </head>
 <body>
 
-<img class="mainLogo" src="./img/logofull.png">
+<div class="wrapper">
+	<div class="parallax-container">
+		<div class="parallax-container-inner floating">
+			<div class="parallax-container__layer1 parallax-layer" style="background-image: url(&quot;https://www.ntigymnasiet.se/wp-content/themes/nti/img/layer_3.png&quot;); transform: translate3d(-9.79861px, 49.2812px, 0px);"></div>
 
-<div class="boxContainer">
-	<div class="megaBox tab_students neutral">
-		<div class="megaBoxContents">
-			<h1 class="boxHeader bigBoxHeaderText">Students</h1>
+			<div class="parallax-container__layer2 parallax-layer" style="background-image: url(&quot;https://www.ntigymnasiet.se/wp-content/themes/nti/img/layer_2.png&quot;); transform: translate3d(3.79704px, 2.4641px, 0px);"></div>
 
-			<div class="links">
-				<a target="_blank" rel="noopener noreferrer" class="box" href="https://sms.schoolsoft.se/nti/sso">SchoolSoft</a>
-				<a target="_blank" rel="noopener noreferrer" class="box" href="https://classroom.google.com">Google Classroom</a>
-				<a target="_blank" rel="noopener noreferrer" class="box" href="https://skolmaten.se/it-gymnasiet-sodertorn">Skolmaten</a>
-				<div class="flex-break"></div>
-				<a target="_blank" rel="noopener noreferrer" class="box" href="https://sl.se">SL</a>
-				<a target="_blank" rel="noopener noreferrer" class="box" href="https://discordapp.com/invite/HcQrTHZ">NTI Lan</a>
-				<a target="_blank" rel="noopener noreferrer" class="box" href="https://webtools.itgonline.se">NTI Webtools</a>
+			<div class="parallax-container__layer3 parallax-layer" style="background-image: url(&quot;https://www.ntigymnasiet.se/wp-content/themes/nti/img/layer_1.png&quot;); transform: translate3d(-3.89229px, 14.7844px, 0px);"></div>
+		</div>
+	</div>
+
+	<img class="mainLogo" src="./img/logofull.png">
+
+	<div class="boxContainer">
+		<div class="megaBox tab_students neutral">
+			<div class="megaBoxContents">
+				<h1 class="boxHeader bigBoxHeaderText">Elever</h1>
+
+				<div class="links">
+					<a target="_blank" rel="noopener noreferrer" class="box" href="https://sms.schoolsoft.se/nti/sso">SchoolSoft
+						&nbsp;<i class="fas fa-external-link-alt"></i></a>
+					<a target="_blank" rel="noopener noreferrer" class="box" href="https://classroom.google.com">Google Classroom
+						&nbsp;<i class="fas fa-external-link-alt"></i></a>
+					<a target="_blank" rel="noopener noreferrer" class="box" href="https://skolmaten.se/it-gymnasiet-sodertorn">Skolmaten
+						&nbsp;<i class="fas fa-external-link-alt"></i></a>
+					<div class="flex-break"></div>
+					<a target="_blank" rel="noopener noreferrer" class="box" href="https://sl.se">SL
+						&nbsp;<i class="fas fa-external-link-alt"></i></a>
+					<a target="_blank" rel="noopener noreferrer" class="box" href="https://discordapp.com/invite/HcQrTHZ">NTI Lan
+						&nbsp;<i class="fas fa-external-link-alt"></i></a>
+					<a target="_blank" rel="noopener noreferrer" class="box" href="https://webtools.itgonline.se">NTI Webtools
+						&nbsp;<i class="fas fa-external-link-alt"></i>	</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="megaBox tab_staff neutral">
+			<div class="megaBoxContents">
+				<h1 class="boxHeader bigBoxHeaderText">Personal</h1>
+
+				<div class="links">
+					<a target="_blank" rel="noopener noreferrer" class="box" href="https://sms.schoolsoft.se/nti/sso">SchoolSoft
+						&nbsp;<i class="fas fa-external-link-alt"></i></a>
+					<a target="_blank" rel="noopener noreferrer" class="box" href="http://www.novasoftware.se/webviewer/(S(jvoq4wflwdbir445nnoalb45))/design1.aspx?schoolid=80080&code=546658">Schema
+						&nbsp;<i class="fas fa-external-link-alt"></i></a>
+					<a target="_blank" rel="noopener noreferrer" class="box" href="https://skolmaten.se/it-gymnasiet-sodertorn/">Skolmaten
+						&nbsp;<i class="fas fa-external-link-alt"></i></a>
+					<div class="flex-break"></div>
+					<a target="_blank" rel="noopener noreferrer" class="box" href="https://webtools.itgonline.se">NTI Webtools
+						&nbsp;<i class="fas fa-external-link-alt"></i></a>
+					<a target="_blank" rel="noopener noreferrer" class="box" href="https://www.benify.se/p/sv-se/">Benify
+						&nbsp;<i class="fas fa-external-link-alt"></i></a>
+					<a target="_blank" rel="noopener noreferrer" class="box" href="https://classroom.google.com">Google Classroom
+						&nbsp;<i class="fas fa-external-link-alt"></i></a>
+				</div>
+				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="megaBox tab_staff neutral">
-		<div class="megaBoxContents">
-			<h1 class="boxHeader bigBoxHeaderText">Staff</h1>
-
-			<div class="links">
-				<a target="_blank" rel="noopener noreferrer" class="box" href="https://sms.schoolsoft.se/nti/sso">SchoolSoft</a>
-				<a target="_blank" rel="noopener noreferrer" class="box" href="http://www.novasoftware.se/webviewer/(S(jvoq4wflwdbir445nnoalb45))/design1.aspx?schoolid=80080&code=546658">Schema</a>
-				<a target="_blank" rel="noopener noreferrer" class="box" href="https://skolmaten.se/it-gymnasiet-sodertorn/">Skolmaten</a>
-				<a target="_blank" rel="noopener noreferrer" class="box" href="https://webtools.itgonline.se">NTI Webtools</a>
-				<a target="_blank" rel="noopener noreferrer" class="box" href="https://www.benify.se/p/sv-se/">Benify</a>
-				<a target="_blank" rel="noopener noreferrer" class="box" href="https://classroom.google.com">Google Classroom</a>
+	<div class="newsTab">
+		<h1 class="newsHeader">News</h1>
+		<div class="newsContainer">
+			<div class="newsPost">
+				<h3>Dagens lunch</h3>
+				<p>Pappas spaghetti med KRAV- Ketchup</p>
+				<div class="newsLine"></div>
 			</div>
+			<div class="newsPost">
+				<h3>Frånvarande lärare</h3>
+				<p>Bondhon, Erik</p>
+				<div class="newsLine"></div>
+			</div>
+			<div class="newsPost">
+				<h3>Uppkommande prov</h3>
+				<p>Fysik 2 16TEKCS (Torsdag), Matematik 4 16TEKCS (Fredag)</p>
+				<div class="newsLine"></div>
+			</div>
+			<div class="newsPost">
+				<h3>Pendelinformation</h3>
+				<p>Busskorten är nu tillgängliga hos Birgitta.</p>
+				<div class="newsLine"></div>
+			</div>
+			<div class="newsPost">
+				<h3>Morgondagens lunch</h3>
+				<p>Mammas meatballs w/ KRAV- Ketchup</p>
+				<div class="newsLine"></div>
+			</div>
+			<div class="newsPost">
+				<h3>Friday's lunch</h3>
+				<p>Mom's fishsticks w/ KRAV- Ketchup</p>
+				<div class="newsLine"></div>
 			</div>
 		</div>
 	</div>
+
+	<footer>We Love NTIG uses cookies on the weloventig.se website (the "Service").<br>
+		By using the Service, you consent to the use of cookies.&nbsp;
+		<a target="_blank" rel="noopener noreferrer" href="https://termsfeed.com/cookies-policy/78aea06bb62e26f532d783c1c8f58b3c">Read More</a>
+		<br>
+		<br>
+		<span class="cookieClose">✖ Close this message</span>
+		<div class="newsLine"></div>
+	</footer>
 </div>
-
-<div class="newsTab">
-	<h1 class="newsHeader">News</h1>
-	<div class="newsContainer">
-		<div class="newsPost">
-			<h3>Today's lunch</h3>
-			<p>Mom's spaghetti w/ KRAV- Ketchup</p>
-		</div>
-		<div class="newsPost">
-			<h3>Abscent teachers today</h3>
-			<p>Bondhon, Erik</p>
-		</div>
-		<div class="newsPost">
-			<h3>Upcoming tests</h3>
-			<p>Physics 2 (Thursday), Mathematics 3c (Friday)</p>
-		</div>
-		<div class="newsPost">
-			<h3>Commuting info</h3>
-			<p>Bus cards are now available to pick up at the info desk.</p>
-		</div>
-		<div class="newsPost">
-			<h3>Tomorrow's lunch</h3>
-			<p>Mom's meatballs w/ KRAV- Ketchup</p>
-		</div>
-		<div class="newsPost">
-			<h3>Friday's lunch</h3>
-			<p>Mom's fishsticks w/ KRAV- Ketchup</p>
-		</div>
-	</div>
-</div>
-
-<footer>We Love NTIG uses cookies on the http://weloventig.se/ website (the "Service").<br>
-	By using the Service, you consent to the use of cookies.&nbsp;
-	<a target="_blank" rel="noopener noreferrer" href="https://termsfeed.com/cookies-policy/78aea06bb62e26f532d783c1c8f58b3c">Read More</a>
-	<br>
-	<br>
-	<span class="cookieClose">✖ Close this message</span>
-</footer>
-
 </body>
 </html>

@@ -17,7 +17,7 @@ $(window).on('load', function(){
 
 	    var weekNumber = (new Date()).getWeek();
 
-	    var dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+	    var dayNames = ['Söndag', 'Måndag', 'Tisdag', 'Onsdag', 'Torsdag', 'Fredag', 'Lördag'];
 	    var now = new Date();
 
 
@@ -68,7 +68,7 @@ $(window).on('load', function(){
 
 	// setting weekday and week number to news header
 
-	$('.newsHeader').text((dayNames[now.getDay()] + " (w " + weekNumber + ") | News"));
+	$('.newsHeader').text((dayNames[now.getDay()] + " (v. " + weekNumber + ") | Nyheter"));
 
 
 	//checking if footer should be hidden
