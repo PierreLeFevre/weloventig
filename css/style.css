@@ -1,3 +1,7 @@
+*{
+	-webkit-tap-highlight-color: transparent;
+}
+
 body{
 	background: url(../img/trianglify.svg);
 	font-family: "Open Sans";
@@ -92,14 +96,14 @@ a{
 .boxHeader{
 	text-align: center;
 	user-select: none;
-	font-size: 1.5vw;
+	font-size: 1.5rem;
 	color: rgba(29, 29, 27, 1);
 	transition: all 0.2s ease-in-out; 
 }
 
 .bigBoxHeaderText{
 	color: rgba(29, 29, 27, 1);
-	font-size: 4vw;
+	font-size: 6rem;
 }
 
 .links{
@@ -114,13 +118,17 @@ a{
 	flex-wrap: wrap;
 }
 
+.flex-break{
+	width: 100%;
+}
+
 .box{
 	border-radius: 1vh;
 	background: rgba(255,255,255,0.5);
 	box-sizing: border-box;
-	padding: 1vh 1vw;
+	padding: 1vh 1.5vw;
 	margin: 0 1vh 1vh 1vh;
-	font-size: 2vw;
+	font-size: 3rem;
 	transition: all 0.1s ease-in-out;
 	border-bottom: solid 0.5vh rgba(68,68,68,0.75);
 }
@@ -206,6 +214,52 @@ footer a{
 	cursor: pointer;
 }
 
+
+@media only screen and (max-width: 1650px) {
+    .megaBox {
+        width: 30vh;
+        height: 30vh;
+    }
+
+    .boxHeader{
+    	font-size: 1.5rem;
+    }
+
+    .bigBoxHeaderText{
+    	font-size: 4rem;
+    }
+
+    .newsHeader{
+    	font-size: 1.75em;
+    }
+
+    .maximized{
+    	height: 100%;
+    	width: 100%;
+    }
+    
+    .box{
+		font-size: 2rem;
+    }
+
+    .stowed{
+    	font-size: 1.75em;
+    	height: 7vh;
+    	width: 15vh;
+    	left: 55vw;
+    }
+
+    .flexBreak{
+    	display: none;
+    }
+
+    footer{
+    	left: 10%;
+    	width: 50%;
+    	transform: translate(0,0);
+    }
+}
+
 @media (orientation: portrait){
 
 	h1, h2, h3, h4, h5, h6 {
@@ -231,6 +285,10 @@ footer a{
 
 	.bigBoxHeaderText{
 		font-size: 6vw;		
+	}
+
+	.flex-break{
+		display: none;
 	}
 
 	.box{
