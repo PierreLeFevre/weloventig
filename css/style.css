@@ -411,6 +411,11 @@ footer a{
 		background-size: auto 100%;
 	}
 
+	.wrapper{
+		width: 100%;
+		overflow-x: hidden;
+	}
+
 	.mainLogo{
 		width: 65vw;
 	}
@@ -422,7 +427,8 @@ footer a{
 	}
 
 	.bigBoxHeaderText{
-		font-size: 6vw;		
+		font-size: 4rem !important;	
+		transition: all 0s;	
 	}
 
 	.flex-break{
@@ -449,17 +455,25 @@ footer a{
 		right: 3.5vw;
 	}
 
+	.links{
+		flex-direction: column;
+		justify-content: space-between;
+		height: 70%;
+		bottom: 10%;
+	}
+
 	.stowed{
-		border-radius: 0 0 1vh 1vh;
+		border-radius: 0 0 0 1vh;
 		top: 3.5vh;
 		left: auto;
-		right: 5vw;
+		right: 0;
 		height: 7.5vh;
 		width: 15vh;
 	}
 
 	.boxHeader{
-		font-size: 5vw;
+		font-size: 3rem;
+		transition: all 0s;	
 	}
 
 	.maximized{
