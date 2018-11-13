@@ -458,7 +458,7 @@ footer a{
 
 	.boxContainer{
 		width: 100vw;
-		height: 80vh;
+		height: 70vh;
 		top: 10vh;
 	}
 
@@ -511,7 +511,7 @@ footer a{
 	}
 
 	.boxHeader{
-		font-size: 3rem;
+		font-size: 5vw;
 		-webkit-transition: all 0s;	
 		transition: all 0s;	
 	}
@@ -526,8 +526,8 @@ footer a{
 	}
 
 	.newsTab{
-		height: 100vh;
-		top: 90vh;
+		height: 90vh;
+		top: 80vh;
 		width: 100vw;
 		bottom: auto;
 	}
