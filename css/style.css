@@ -188,6 +188,9 @@ a{
 	width: 15vh;
 	cursor: pointer;
 	background-image: linear-gradient(-90deg, #0DE1EC 0%, #200C9C 30%, #4A0082  70%, #DD0890 100%);
+	-webkit-animation: stowingBackground 0.2s ease-in-out;
+	-moz-animation: stowingBackground 0.2s ease-in-out;
+	-o-animation: stowingBackground 0.2s ease-in-out;
 	animation: stowingBackground 0.2s ease-in-out;
 }
 
@@ -196,6 +199,21 @@ a{
 	top: 3.5vh;
 }
 
+@-webkit-keyframes stowingBackground{
+	0%{background: rgba(246, 246, 246, 0.5);}
+	0%{background: rgba(246, 246, 246, 0.5);}
+	100%{background-image: linear-gradient(-90deg, #0DE1EC 0%, #200C9C 30%, #4A0082  70%, #DD0890 100%);}
+}
+@-moz-keyframes stowingBackground{
+	0%{background: rgba(246, 246, 246, 0.5);}
+	0%{background: rgba(246, 246, 246, 0.5);}
+	100%{background-image: linear-gradient(-90deg, #0DE1EC 0%, #200C9C 30%, #4A0082  70%, #DD0890 100%);}
+}
+@-o-keyframes stowingBackground{
+	0%{background: rgba(246, 246, 246, 0.5);}
+	0%{background: rgba(246, 246, 246, 0.5);}
+	100%{background-image: linear-gradient(-90deg, #0DE1EC 0%, #200C9C 30%, #4A0082  70%, #DD0890 100%);}
+}
 @keyframes stowingBackground{
 	0%{background: rgba(246, 246, 246, 0.5);}
 	0%{background: rgba(246, 246, 246, 0.5);}
