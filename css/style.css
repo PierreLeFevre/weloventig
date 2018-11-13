@@ -310,6 +310,7 @@ a{
 	right: 0;
 	background: rgba(255,255,255,0.5);
 	animation: loadBottom 0.2s ease-out;
+	overflow: hidden;
 }
 
 .hideOnDesktop{
@@ -530,7 +531,6 @@ footer a{
 		top: 80vh;
 		width: 100vw;
 		bottom: auto;
-		overflow: hidden;
 	}
 
 	.newsContainer{
