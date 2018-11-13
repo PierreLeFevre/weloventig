@@ -7,9 +7,19 @@ $(window).on('load', function(){
 	staff = $('body').find('.tab_staff');
 	students = $('body').find('.tab_students');
 
+	//scroll down
+
 	$(".newsHeader").on("click", function(){
 		$([document.documentElement, document.body]).animate({
         	scrollTop: $(".newsHeader").offset().top
+   		}, 750);
+	});
+
+	//scroll up
+
+	$(".backToTop").on("click", function(){
+		$([document.documentElement, document.body]).animate({
+        	scrollTop: $("body").offset().top
    		}, 750);
 	});
 
@@ -73,7 +83,7 @@ $(window).on('load', function(){
 
 	// setting weekday and week number to news header
 
-	$('.newsHeader').text((dayNames[now.getDay()] + " (v. " + weekNumber + ") | Nyheter"));
+	$('.newsHeaderSpan').text((dayNames[now.getDay()] + " (v. " + weekNumber + ") | Nyheter"));
 
 
 	//checking if footer should be hidden

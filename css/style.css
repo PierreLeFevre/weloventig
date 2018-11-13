@@ -187,6 +187,7 @@ a{
 	height: 7.5vh;
 	width: 15vh;
 	cursor: pointer;
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
 	background-image: linear-gradient(-90deg, #0DE1EC 0%, #200C9C 30%, #4A0082  70%, #DD0890 100%);
 	-webkit-animation: stowingBackground 0.2s ease-in-out;
 	-moz-animation: stowingBackground 0.2s ease-in-out;
@@ -200,23 +201,23 @@ a{
 }
 
 @-webkit-keyframes stowingBackground{
-	0%{background: rgba(246, 246, 246, 0.5);}
-	0%{background: rgba(246, 246, 246, 0.5);}
+	0%{background: rgba(246, 246, 246, 0);}
+	0%{background: rgba(246, 246, 246, 0);}
 	100%{background-image: linear-gradient(-90deg, #0DE1EC 0%, #200C9C 30%, #4A0082  70%, #DD0890 100%);}
 }
 @-moz-keyframes stowingBackground{
-	0%{background: rgba(246, 246, 246, 0.5);}
-	0%{background: rgba(246, 246, 246, 0.5);}
+	0%{background: rgba(246, 246, 246, 0);}
+	0%{background: rgba(246, 246, 246, 0);}
 	100%{background-image: linear-gradient(-90deg, #0DE1EC 0%, #200C9C 30%, #4A0082  70%, #DD0890 100%);}
 }
 @-o-keyframes stowingBackground{
-	0%{background: rgba(246, 246, 246, 0.5);}
-	0%{background: rgba(246, 246, 246, 0.5);}
+	0%{background: rgba(246, 246, 246, 0);}
+	0%{background: rgba(246, 246, 246, 0);}
 	100%{background-image: linear-gradient(-90deg, #0DE1EC 0%, #200C9C 30%, #4A0082  70%, #DD0890 100%);}
 }
 @keyframes stowingBackground{
-	0%{background: rgba(246, 246, 246, 0.5);}
-	0%{background: rgba(246, 246, 246, 0.5);}
+	0%{background: rgba(246, 246, 246, 0);}
+	0%{background: rgba(246, 246, 246, 0);}
 	100%{background-image: linear-gradient(-90deg, #0DE1EC 0%, #200C9C 30%, #4A0082  70%, #DD0890 100%);}
 }
 
@@ -226,7 +227,8 @@ a{
 	left: 0;
 	border-radius: 0;
 	cursor: default;
-	background: rgba(246, 246, 246, 0.5);
+	background: rgba(246, 246, 246, 0);
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
 }
 
 .boxHeader{
@@ -308,6 +310,10 @@ a{
 	right: 0;
 	background: rgba(255,255,255,0.5);
 	animation: loadBottom 0.2s ease-out;
+}
+
+.hideOnDesktop{
+	display: none !important;
 }
 
 .newsHeader{
@@ -452,7 +458,7 @@ footer a{
 
 	.boxContainer{
 		width: 100vw;
-		height: 65vh;
+		height: 80vh;
 		top: 10vh;
 	}
 
@@ -521,9 +527,14 @@ footer a{
 
 	.newsTab{
 		height: 100vh;
-		top: 75vh;
+		top: 90vh;
 		width: 100vw;
 		bottom: auto;
+	}
+
+	.newsContainer{
+		height: 80%;
+		bottom: 10vh;
 	}
 
 	.newsHeader{
@@ -533,6 +544,21 @@ footer a{
 	.newsPost{
 		padding: 0.5vh 3.5vw;
 		font-size: 4vw;
+	}
+
+	.hideOnDesktop{
+		display: inline-block !important;
+	}
+
+	.backToTop{
+		text-align: center;
+		user-select: none;
+		font-family: "soleto-light", sans-serif;
+		font-size: 5.5vw;
+		position: absolute;
+		bottom: 0.5vh;
+		left: 50%;
+		transform: translateX(-50%);
 	}
 
 
