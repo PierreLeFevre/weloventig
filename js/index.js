@@ -7,6 +7,11 @@ $(window).on('load', function(){
 	staff = $('body').find('.tab_staff');
 	students = $('body').find('.tab_students');
 
+	$(".newsHeader").on("click", function(){
+		$([document.documentElement, document.body]).animate({
+        	scrollTop: $(".newsHeader").offset().top
+   		}, 750);
+	});
 
 	//week number & date finder
 
