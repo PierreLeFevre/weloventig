@@ -458,8 +458,8 @@ footer a{
 
 	.bigBoxHeaderText{
 		font-size: 8vw !important;	
-		-webkit-transition: all 0.2s;	
-		transition: all 0.2s;	
+		-webkit-transition: all 0s;	
+		transition: all 0s;	
 	}
 
 	.flex-break{
@@ -475,8 +475,8 @@ footer a{
 	.megaBox{
 		height: 45vw;
 		width: 45vw;
-		-webkit-transition: all 0.2s ease-in-out; 
-		transition: all 0.2s ease-in-out; 
+		-webkit-transition: all 0s ease-in-out; 
+		transition: all 0s ease-in-out; 
 	}
 
 	.tab_students{
@@ -506,8 +506,8 @@ footer a{
 
 	.boxHeader{
 		font-size: 3rem;
-		-webkit-transition: all 0.2s;	
-		transition: all 0.2s;	
+		-webkit-transition: all 0s;	
+		transition: all 0s;	
 	}
 
 	.maximized{
